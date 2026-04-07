@@ -10,7 +10,7 @@ pg = load_penguins()
 st.title(":red[:material/home:] streamlit 연습장")
 st.header("연습용입니다")
 
-st.subheader(":blue[:materials/Arrow Forward:] penguins 데이터셋 예시")
+st.subheader(":blue[:materials/ArrowForward:] penguins 데이터셋 예시")
 st.write(pg.head())
 
 st.subheader("penguins 데이터셋 통계")
