@@ -7,7 +7,7 @@ def load_penguins():
 
 pg = load_penguins()
 
-st.title(":materials/Home streamlit 연습장")
+st.title(":red[:material/home:] streamlit 연습장")
 st.header("연습용입니다")
 
 st.subheader("penguins 데이터셋 예시")
