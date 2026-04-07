@@ -6,6 +6,7 @@ def load_penguins():
     return sns.load_dataset("penguins")
 
 pg = load_penguins()
+icn = ":blue[:material/Arrow_Right:]"
 
 st.title(":red[:material/home:] streamlit 연습장")
 st.header("연습용입니다")
@@ -13,7 +14,7 @@ st.header("연습용입니다")
 st.subheader(":blue[:material/Arrow_Forward:] penguins 데이터셋 예시")
 st.write(pg.head())
 
-st.subheader("penguins 데이터셋 통계")
+st.subheader(f"{icn}penguins 데이터셋 통계")
 st.write(pg.describe())
 
 st.subheader("seaborn pairplot 예시")
