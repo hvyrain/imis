@@ -17,20 +17,20 @@ st.write(pg.head())
 st.subheader(f"{icn}penguins 데이터셋 통계")
 st.write(pg.describe())
 
-st.subheader("seaborn pairplot 예시")
+st.subheader(f"{icn}seaborn pairplot 예시")
 #fig = sns.pairplot(pg, hue="species", diag_kind="hist", markers=["o", "s", "D"])
 # seaborn.pairplot returns a PairGrid object; Streamlit renders its underlying Matplotlib figure.
 st.pyplot(sns.pairplot(pg, hue="species", diag_kind="hist", markers=["o", "s", "D"])
 .fig)
 
-st.subheader("seaborn boxplot 예시")
+st.subheader(f"{icn}seaborn boxplot 예시")
 # seaborn boxplot example
 import matplotlib.pyplot as plt
 fig, ax = plt.subplots()
 sns.boxplot(x="species", y="body_mass_g", data=pg, ax=ax)
 st.pyplot(fig)
 
-st.subheader("seaborn heatmap 예시")
+st.subheader(f"{icn}seaborn heatmap 예시")
 # seaborn heatmap example   
 corr = pg.corr(numeric_only=True)  # Compute correlation matrix for numeric columns
 fig, ax = plt.subplots()
